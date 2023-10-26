@@ -1,0 +1,4 @@
+sentence-transformers
+gdown==4.5.4
+spacy
+debater-python-api

@@ -66,27 +66,35 @@ seed_id = 0
 
 method6_sums = []
 method6_coverages = []
-method10_sums = []
-method10_coverages = []
+method11_sums = []
+method11_coverages = []
 
 sums, coverage = run_experiment_argkp(model, embedder, argkp_wother, method_v6, limits = [])
 method6_sums.append(sums)
 method6_coverages.append(coverage)
 
 sums, coverage = run_experiment_argkp(model, embedder, argkp_wother, method_v11, limits = [])
-method10_sums.append(sums)
-method10_coverages.append(coverage)
+method11_sums.append(sums)
+method11_coverages.append(coverage)
 
+print("Outputs using SMM on ArgKP: ")
+print(method6_sums)
+print("Outputs using SSF on ArgKP: ")
+print(method11_sums)
 
 
 
 ###### Experimentingon debate, method 6 and 11
 # Method 6
 sums, coverage = run_experiment_debate(model, embedder, debate, method_v6, limits = limits_debate)
+print("Outputs using SMM on Debate: ")
 print(sums)
-print(coverage)
+# print(coverage)
+
+
 
 # Method 11
 sums, coverage = run_experiment_debate(model, embedder, debate, method_v11, limits = limits_debate)
+print("Outputs using SSF on Debate: ")
 print(sums)
-print(coverage)
+# print(coverage)
