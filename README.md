@@ -42,3 +42,20 @@ To perform summarization on ArgKP dataset and Debate dataset run the following:
 
 ### Evaluation Metric
 To perform evaluation on a summary of ArgKP test set add the summary as a list containing summary of each topic and run the notebook.
+
+# Input and Output Samples
+The output of the model given arguments on the topic of child vaccination. 
+# Input
+The full list of arguments:
+
+[CSV File](https://github.com/IBM/KPA_2021_shared_task/blob/main/test_data/arguments_test.csv)
+# Output
+- 'Prevents a large number of diseases',
+- 'this vaccine could cause unwanted side effects',
+- 'Parents should decide what is best for their child.',
+- 'Child vaccination should be mandatory to avoid the virus',
+- "Child vaccination shouldn't be mandatory because children don't catch the virus",
+- 'protecting infants must be a priority for all',
+- 'to keep schools safe children must be vaccinated',
+- 'because they can have very dangerous reactions to vaccines',
+- 'the vaccine provide immunity to  the people  and prevents to contract the disease'
